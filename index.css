@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: sans-serif; */
+    background-image: url('images/Furniture.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: 720px; */
+    color: white;
+}
+
+body::before {
+  content: "";
+  position: fixed;  /* fixed so it stays on screen */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.43); /* 43% opacity */
+  pointer-events: none; /* let clicks pass through */
+  z-index: -1; /* behind all content */
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+
+.intro {
+    color: rgb(255, 145, 2);
+    margin-bottom: 15px;
+}
+
+article {
+    border: solid 2px grey;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 234px;
+    display: inline-block;
+}
+
