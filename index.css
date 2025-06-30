@@ -75,6 +75,7 @@ h2 {
 .item-description {
   color: rgb(207, 207, 207);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
 }
 
 .price {
