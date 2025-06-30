@@ -97,4 +97,8 @@ button {
   font-size: 15px;
 }
 
-
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #dd7210;
+}
