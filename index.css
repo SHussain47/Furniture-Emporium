@@ -2,15 +2,6 @@
   margin: 0px;
 }
 
-body {
-  margin: 0px;
-  padding: 0px;
-  background-image: url("images/Furniture.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .back-background {
   position: fixed;
   top: 0;
@@ -24,29 +15,86 @@ body {
   z-index: -3; /* very back */
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 50vw;
-    background-image: url('images/Furniture.jpeg');  /* main image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -2;
-  }
+header {
+  text-align: center;
+  margin: 375px 0 450px;
+}
 
-  body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.25); /* 25% opacity */
-    pointer-events: none;
-    z-index: -1;
-  }
+h1 {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 100px;
+}
+
+.intro {
+  color: rgb(255, 145, 2);
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+.background-container {
+  position: relative;
+  background-image: url("images/Furniture.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  z-index: -2;
+}
+
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+article {
+  border: solid 2px  #dd7210;
+  background-color: rgb(7, 6, 6);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 150px 1.5% 230px;
+  display: inline-block;
+  vertical-align: top;
+
+  width: 30%;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.item-description {
+  color: rgb(207, 207, 207);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.price {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.c_price {
+  color: rgb(124, 119, 119);
+}
+
+button {
+  background-color: #dd7210;
+  color: #ffffff;
+  border-radius: 50px;
+  margin: 7px 0px 7px 0px;
+  padding: 8px 30px 8px 30px;
+  font-size: 15px;
+}
+
 
